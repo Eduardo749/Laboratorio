@@ -1,0 +1,63 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>formularios</title>
+<link rel="stylesheet" type="text/css" href="formularios.css">
+<link rel="shortcut icon" href="../A.jpg" type="image/x-icon">
+</head>
+
+<body bgcolor="yellow">
+
+    <nav class="nav" >
+  <ul class="menu"  >
+    <li style="width: 230px"> <a href="../index.html" style="text-align: center;" >index</a></li>
+     <li style="width: 230px"> <a href="formulario1.html" style="text-align: center;" >FORM1 </a></li>
+     <li style="width: 230px"> <a href="formulario3.html" style="text-align: center;" >FORM3 </a></li>
+     <li style="width: 230px"> <a href="formulario4.html" style="text-align: center;">FORM4 </a></li>
+   
+    </ul>
+</nav>
+
+<h2>Información sobre el producto</h3>
+<form align="center" name="miform" method="post">
+
+
+
+<fieldset>
+  <legend><strong>Datos básicos</strong></legend>
+
+  <label for="nombre">Nombre</label> <br>  
+  <input name="nombre" id="nombre" size="50" maxlength="250" type="text"><br><br>
+  <label for="descripcion">Descripción</label> <br>  
+  <textarea name="descripcion" id="descripcion" cols="40" rows="5"></textarea><br><br>
+
+  Foto <input name="foto" type="file"><br><br>  
+  <input name="contador" value="si" type="checkbox"> Añadir contador de visitas
+</fieldset>
+
+<br>
+<fieldset>
+  <legend><strong>Datos económicos</strong></legend>
+  
+  <label for="precio">Precio</label> 
+  <input size="5" id="precio" name="precio" type="text"> €
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <label for="impuestos">Impuestos</label> 
+  <select name="impuestos">
+    <option value="4">4%</option>
+    <option value="7">7%</option>
+    <option value="16">16%</option>
+    <option value="25">25%</option>
+  </select>
+  
+  <br><br>
+  <label>Promoción</label> <br>
+  <input name="promocion" value="ninguno" checked="checked" type="radio"> Ninguno <br>
+
+  <input name="promocion" value="portes" type="radio"> Transporte gratuito <br>
+  <input name="promocion" value="descuento" type="radio"> Descuento 5%
+</fieldset>
+</form>
+
+
+</body></html>
